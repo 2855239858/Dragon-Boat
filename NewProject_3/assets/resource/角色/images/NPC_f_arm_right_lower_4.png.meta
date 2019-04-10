@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "8732eee1-3ff8-4b25-a9bd-01fd06533dc7",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "NPC_f_arm_right_lower_4": {
+      "ver": "1.0.3",
+      "uuid": "ff76aa4e-a622-45ab-b257-e21d58de6492",
+      "rawTextureUuid": "8732eee1-3ff8-4b25-a9bd-01fd06533dc7",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1,
+      "offsetY": -1.5,
+      "trimX": 5,
+      "trimY": 4,
+      "width": 22,
+      "height": 23,
+      "rawWidth": 30,
+      "rawHeight": 28,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
