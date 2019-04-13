@@ -1,0 +1,332 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "Animation_3",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.8333333333333334,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "body/left hand2": {
+        "props": {
+          "rotation": [
+            {
+              "frame": 0,
+              "value": 35
+            },
+            {
+              "frame": 0.18333333333333332,
+              "value": 14
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 35
+            }
+          ],
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -63.9,
+                8.6
+              ]
+            },
+            {
+              "frame": 0.18333333333333332,
+              "value": [
+                -62.6,
+                -0.9
+              ]
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": [
+                -63.9,
+                8.6
+              ]
+            }
+          ]
+        }
+      },
+      "body/right hand2": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -53.9,
+                -12.9
+              ]
+            },
+            {
+              "frame": 0.18333333333333332,
+              "value": [
+                -46.2,
+                -14.9
+              ]
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": [
+                -53.9,
+                -12.9
+              ]
+            }
+          ],
+          "rotation": [
+            {
+              "frame": 0,
+              "value": 83
+            },
+            {
+              "frame": 0.18333333333333332,
+              "value": 73
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 83
+            }
+          ]
+        }
+      },
+      "body/right hand1": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -36.9,
+                0.7
+              ]
+            },
+            {
+              "frame": 0.18333333333333332,
+              "value": [
+                -35.6,
+                1.1
+              ]
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": [
+                -36.9,
+                0.7
+              ]
+            }
+          ],
+          "rotation": [
+            {
+              "frame": 0,
+              "value": 76
+            },
+            {
+              "frame": 0.18333333333333332,
+              "value": 55
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 76
+            }
+          ]
+        }
+      },
+      "body/left hand1": {
+        "props": {
+          "rotation": [
+            {
+              "frame": 0,
+              "value": 44
+            },
+            {
+              "frame": 0.18333333333333332,
+              "value": 4
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 44
+            }
+          ],
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -48.9,
+                16.1
+              ]
+            },
+            {
+              "frame": 0.18333333333333332,
+              "value": [
+                -51.7,
+                11.1
+              ]
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": [
+                -48.9,
+                16.1
+              ]
+            }
+          ]
+        }
+      },
+      "船桨": {
+        "props": {
+          "rotation": [
+            {
+              "frame": 0,
+              "value": 156
+            },
+            {
+              "frame": 0.18333333333333332,
+              "value": 106
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 156
+            }
+          ],
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -55.7,
+                -96.3
+              ]
+            },
+            {
+              "frame": 0.18333333333333332,
+              "value": [
+                8.3,
+                -75.1
+              ]
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": [
+                -55.7,
+                -96.3
+              ]
+            }
+          ]
+        }
+      },
+      "head": {
+        "props": {
+          "rotation": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.18333333333333332,
+              "value": -24
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0
+            }
+          ],
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.18333333333333332,
+              "value": [
+                -26.2,
+                5.8
+              ]
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "head/Angry": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "body": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.18333333333333332,
+              "value": [
+                -13.1,
+                13.1
+              ]
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": [
+                0,
+                0
+              ]
+            }
+          ],
+          "rotation": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.18333333333333332,
+              "value": -29
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "head/NPC_m_face": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "head/face": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

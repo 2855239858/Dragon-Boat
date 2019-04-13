@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "93a29c71-677b-40bf-953c-ccc6844eaf79",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "凳子": {
+      "ver": "1.0.3",
+      "uuid": "861b4df6-ec99-4646-938e-1310852935d1",
+      "rawTextureUuid": "93a29c71-677b-40bf-953c-ccc6844eaf79",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 4,
+      "offsetY": -91,
+      "trimX": 110,
+      "trimY": 548,
+      "width": 742,
+      "height": 386,
+      "rawWidth": 954,
+      "rawHeight": 1300,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
