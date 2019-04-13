@@ -1,12 +1,12 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "动画1",
+  "_name": "Animation_1_nomalSpeed",
   "_objFlags": 0,
   "_native": "",
   "_duration": 1.0333333333333334,
   "sample": 60,
   "speed": 1,
-  "wrapMode": 1,
+  "wrapMode": "2",
   "curveData": {
     "paths": {
       "head": {

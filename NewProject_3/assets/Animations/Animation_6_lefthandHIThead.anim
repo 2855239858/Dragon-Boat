@@ -1,12 +1,12 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "Animation_6",
+  "_name": "Animation_6_lefthandHIThead",
   "_objFlags": 0,
   "_native": "",
   "_duration": 0.2833333333333333,
   "sample": 60,
   "speed": 1,
-  "wrapMode": 1,
+  "wrapMode": "2",
   "curveData": {
     "paths": {
       "body": {
