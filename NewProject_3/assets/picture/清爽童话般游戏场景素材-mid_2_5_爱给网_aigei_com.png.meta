@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "2c75a570-2a52-4c95-beca-05985b573068",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "清爽童话般游戏场景素材-mid_2_5_爱给网_aigei_com": {
+      "ver": "1.0.3",
+      "uuid": "eabcfb72-eba8-4e49-9e1c-bab81ee63dc8",
+      "rawTextureUuid": "2c75a570-2a52-4c95-beca-05985b573068",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -32.5,
+      "trimX": 0,
+      "trimY": 65,
+      "width": 800,
+      "height": 415,
+      "rawWidth": 800,
+      "rawHeight": 480,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
