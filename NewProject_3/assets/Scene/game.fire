@@ -41,8 +41,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.5923583984375,
-      "y": 0.5923583984375,
+      "x": 0.4235874395353395,
+      "y": 0.4235874395353395,
       "z": 1
     },
     "_quat": {
@@ -184,7 +184,7 @@
     "_skewX": 0,
     "_skewY": 0,
     "groupIndex": 0,
-    "_id": "07Xruh4tRDaInk4fpyFIZl"
+    "_id": "5f0KmdR4dEvZyf9O42nhmY"
   },
   {
     "__type__": "cc.Camera",
@@ -206,7 +206,7 @@
     "_depth": -1,
     "_zoomRatio": 1,
     "_targetTexture": null,
-    "_id": "a7Rit42w5K0aeKI3s/HyyD"
+    "_id": "45Mjp83wlISr8acyQtDQOS"
   },
   {
     "__type__": "cc.Node",
@@ -353,7 +353,7 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -109,
+      "x": -97,
       "y": -4,
       "z": 0
     },
@@ -420,7 +420,7 @@
     "_scale": {
       "__type__": "cc.Vec3",
       "x": 1,
-      "y": 0.9,
+      "y": 1,
       "z": 1
     },
     "_rotationX": 0,
@@ -3603,6 +3603,11 @@
       "__uuid__": "29a70622-5c5d-460b-8792-b5358412288e"
     },
     "INITY": 0,
+    "mainCamera": {
+      "__id__": 3
+    },
+    "player1": null,
+    "xSpeed": 0,
     "_id": "b7TrtZuhFLQa3eZWasctIv"
   }
 ]
