@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "b9bfdcdf-4d91-4e93-b21d-496b523a6af7",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "终点招牌": {
+      "ver": "1.0.3",
+      "uuid": "c7a11c0f-0c9b-4076-bd5a-6d9f3e05cfcf",
+      "rawTextureUuid": "b9bfdcdf-4d91-4e93-b21d-496b523a6af7",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -21,
+      "offsetY": 110.5,
+      "trimX": 672,
+      "trimY": 170,
+      "width": 282,
+      "height": 1107,
+      "rawWidth": 1668,
+      "rawHeight": 1668,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
