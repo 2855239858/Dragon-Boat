@@ -1,4 +1,4 @@
-const ENDLINE = 500;
+const ENDLINE = 4200;
 const SPEEDTEMP = 100;
 const NPC = new Array();
 const INTERVAL = 80;
@@ -45,6 +45,10 @@ cc.Class({
             this.INITY -= INTERVAL;
             cc.log(NPC[i].getPosition());
         }
+    },
+
+    speedUp(){
+        this.xSpeed += 100;
     },
 
     update: function (dt) {
