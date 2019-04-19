@@ -61,6 +61,7 @@ cc.Class({
         this.node.x += this.moveSpeed * dt;
         //x值超过某个值是销毁并且重生一个新的节点
         if (this.node.x >= this.moveDuration) {
+            this.game2.gainCombo(0);
             this.deadANDlife();
         }
         //this.setInputControl();
@@ -68,10 +69,11 @@ cc.Class({
         if (this.game2.accLeft == true && this.node.x > 0) {
             this.game2.accLeft = false;
             this.deadANDlife();
+            this.game2.dis_g_or_b((this.node.x - 50) / 100);
             this.game2.gainScore();
-        } else if (this.game2.accRight == true) {
-            this.game2.accRight = false;
-            //    //this.deadANDlife();
+            this.game2.gainCombo(1);
+        } else if (this.game2.accRight == true && this.node.x > 0){
+            this.game2.gainCombo(0);
         }
     },
 });

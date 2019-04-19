@@ -2,21 +2,6 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
         mianPrefab: {
             default: null,
             type: cc.Prefab
@@ -26,6 +11,14 @@ cc.Class({
             type: cc.Prefab
         },
         scoreDisplay: {
+            default: null,
+            type: cc.Label
+        },
+        comboDisplay: {
+            default: null,
+            type: cc.Label
+        },
+        good_or_badDisplay: {
             default: null,
             type: cc.Label
         },
@@ -44,6 +37,7 @@ cc.Class({
     onLoad: function () {
         var self = this;
         this.score = 0;
+        this.combo = 0;
         this.spanNewStar();
         this.accLeft == false;
         this.accRight == false;
@@ -80,12 +74,24 @@ cc.Class({
         this.score += 1;
         this.scoreDisplay.string = 'Score: ' + this.score.toString();
     },
-
+    gainCombo: function (i) {
+        this.combo += 1;
+        if (i == 0) {
+            this.combo = 0;
+            this.comboDisplay.string = 'combo:' + this.combo.toString();
+        }
+        else { this.comboDisplay.string = 'combo:' + this.combo.toString(); }
+    },
+    dis_g_or_b: function (i) {
+        if (i >= 0 && i < 1){this.good_or_badDisplay.string = 'BAD';}
+        else if (i >= 1 && i < 2) { this.good_or_badDisplay.string = 'GOOD';}
+        else if (i >= 2 && i < 3) { this.good_or_badDisplay.string = 'PREFECT';}  
+    },
     Button_onClick: function () {
         var self = this;
         self.mianButton.node.on(cc.Node.EventType.TOUCH_START, function (event) {
             self.accLeft = true;
-        });
+        }); 
         self.mianButton.node.on(cc.Node.EventType.TOUCH_END, function (event) {
             self.accLeft = false;
         });
