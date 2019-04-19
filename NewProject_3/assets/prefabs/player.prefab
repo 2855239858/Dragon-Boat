@@ -34,13 +34,10 @@
     "_components": [
       {
         "__id__": 197
-      },
-      {
-        "__id__": 198
       }
     ],
     "_prefab": {
-      "__id__": 199
+      "__id__": 198
     },
     "_opacity": 255,
     "_color": {
@@ -6818,16 +6815,6 @@
     },
     "fileId": "7e76w0fhlEAaicyDVXNITD",
     "sync": false
-  },
-  {
-    "__type__": "14ccfbozkRLY4KtFzUayetf",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 1
-    },
-    "_enabled": true,
-    "_id": ""
   },
   {
     "__type__": "cc.Camera",

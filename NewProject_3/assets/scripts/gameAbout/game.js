@@ -1,4 +1,4 @@
-const ENDLINE = 4200;
+const ENDLINE = 500;
 const SPEEDTEMP = 100;
 const NPC = new Array();
 const INTERVAL = 80;
@@ -11,7 +11,15 @@ cc.Class({
             default: null,
             type: cc.Prefab
         },
-        npcPrefab: {
+        npcPrefab1: {
+            default: null,
+            type: cc.Prefab
+        },
+        npcPrefab2: {
+            default: null,
+            type: cc.Prefab
+        },
+        npcPrefab3: {
             default: null,
             type: cc.Prefab
         },
@@ -31,6 +39,7 @@ cc.Class({
     onLoad: function () {
         this.createNpc();
     },
+    
     //创建玩家和AI
     createNpc: function () {
         this.INITY = -25;
@@ -39,11 +48,20 @@ cc.Class({
         this.player1.setPosition(cc.v2(-337, this.INITY));
         this.INITY -= INTERVAL;
         for (let i = 0; i < 3; i++) {
-            NPC[i] = cc.instantiate(this.npcPrefab);
+            switch(i){
+                case 0:
+                NPC[0] = cc.instantiate(this.npcPrefab1);
+                break;
+                case 1:
+                NPC[1] = cc.instantiate(this.npcPrefab2);
+                break;
+                case 2:
+                NPC[2] = cc.instantiate(this.npcPrefab3);
+                break;
+            }
             this.node.addChild(NPC[i]);
             NPC[i].setPosition(cc.v2(-337, this.INITY));
             this.INITY -= INTERVAL;
-            cc.log(NPC[i].getPosition());
         }
     },
 

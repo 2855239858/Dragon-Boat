@@ -20,14 +20,10 @@ cc.Class({
         this.animationComponent.stop('Animation_6_lefthandHIThead');
     },
 
-    Celebreate: function () {
-        this.animationComponent.play('Animation_11_comboSpeed');
-    },
-
     update(dt) {
-        if (this.node.parent.x > ENDLINE) {
-            this.aniStop();
-            this.Celebreate();
+        if (this.node.parent.x > ENDLINE-50) {
+            //this.aniStop();
+            this.animationComponent.playAdditive('drumer_win');
         }
     }
 
