@@ -1,4 +1,4 @@
-const ENDLINE = 4200;
+const ENDLINE = 500;
 
 cc.Class({
     extends: cc.Component,
@@ -21,14 +21,10 @@ cc.Class({
         this.animationComponent.stop('Animation_1_nomalSpeed');
     },
 
-    Celebreate: function () {
-        this.animationComponent.play('Animation_4_comboSpeed');
-    },
-
     update(dt) {
-        if (this.node.parent.x > ENDLINE) {
-            this.aniStop();
-            this.Celebreate();
+        if (this.node.parent.x > ENDLINE-50) {
+            //this.aniStop();
+            this.animationComponent.playAdditive('c_win');
         }
     }
 

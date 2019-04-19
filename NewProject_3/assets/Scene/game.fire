@@ -41,8 +41,13 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
+<<<<<<< HEAD
       "x": 0.4258594036102295,
       "y": 0.4258594036102295,
+=======
+      "x": 0.5939208984375,
+      "y": 0.5939208984375,
+>>>>>>> c59a5c54e29288c6b9eddda0690dbce7c00d6beb
       "z": 1
     },
     "_quat": {
@@ -4670,8 +4675,14 @@
     "playerPrefab": {
       "__uuid__": "fb69c9f7-53a7-4e89-9ddc-21cf5bbaba44"
     },
-    "npcPrefab": {
+    "npcPrefab1": {
       "__uuid__": "29a70622-5c5d-460b-8792-b5358412288e"
+    },
+    "npcPrefab2": {
+      "__uuid__": "1f014778-0a9f-41fe-9f9b-75f6b9ed30c8"
+    },
+    "npcPrefab3": {
+      "__uuid__": "3753bf9d-5b70-4c6d-8cae-a00b186e5057"
     },
     "INITY": 0,
     "mainCamera": {

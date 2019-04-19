@@ -1,4 +1,4 @@
-const ENDLINE = 4200;
+const ENDLINE = 500;
 const SPEEDTEMP = 100;
 
 cc.Class({
