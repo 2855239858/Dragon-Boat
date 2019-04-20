@@ -1,3 +1,8 @@
+const ENDLINE = 4200;
+const SPEEDTEMP = 100;
+const NPC = new Array();
+const INTERVAL = 80;
+
 cc.Class({
     extends: cc.Component,
 
@@ -30,11 +35,36 @@ cc.Class({
             default: null,
             type: cc.Button,
         },
+
+        playerPrefab: {
+            default: null,
+            type: cc.Prefab
+        },
+        npcPrefab1: {
+            default: null,
+            type: cc.Prefab
+        },
+        npcPrefab2: {
+            default: null,
+            type: cc.Prefab
+        },
+        npcPrefab3: {
+            default: null,
+            type: cc.Prefab
+        },
+        INITY: 0,
+        mainCamera: {
+            default: null,
+            type: cc.Node
+        },
+        player1: null,
+        xSpeed: 0,
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad: function () {
+        this.createNpc();
         var self = this;
         this.score = 0;
         this.combo = 0;
@@ -44,7 +74,8 @@ cc.Class({
     },
     spanNewStar: function () {
         //
-        var head = 0, rail = 0;
+        var head = 0,
+            rail = 0;
         var arr = {};
         //生成新节点  左或者右
         var newStar;
@@ -52,8 +83,7 @@ cc.Class({
         if (randNum < 3) {
             newStar = cc.instantiate(this.mianPrefab);
             newStar.getComponent('mian').game2 = this;
-        }
-        else {
+        } else {
             newStar = cc.instantiate(this.cePrefab);
             newStar.getComponent('ce').game2 = this;
         }
@@ -79,19 +109,27 @@ cc.Class({
         if (i == 0) {
             this.combo = 0;
             this.comboDisplay.string = 'combo:' + this.combo.toString();
+        } else {
+            this.comboDisplay.string = 'combo:' + this.combo.toString();
         }
-        else { this.comboDisplay.string = 'combo:' + this.combo.toString(); }
     },
     dis_g_or_b: function (i) {
-        if (i >= 0 && i < 1){this.good_or_badDisplay.string = 'BAD';}
-        else if (i >= 1 && i < 2) { this.good_or_badDisplay.string = 'GOOD';}
-        else if (i >= 2 && i < 3) { this.good_or_badDisplay.string = 'PREFECT';}  
+        if (i >= 0 && i < 1) {
+            this.good_or_badDisplay.string = 'BAD';
+            return 1;
+        } else if (i >= 1 && i < 2) {
+            this.good_or_badDisplay.string = 'GOOD';
+            return 2;
+        } else if (i >= 2 && i < 3) {
+            this.good_or_badDisplay.string = 'PREFECT';
+            return 3;
+        }
     },
     Button_onClick: function () {
         var self = this;
         self.mianButton.node.on(cc.Node.EventType.TOUCH_START, function (event) {
             self.accLeft = true;
-        }); 
+        });
         self.mianButton.node.on(cc.Node.EventType.TOUCH_END, function (event) {
             self.accLeft = false;
         });
@@ -108,5 +146,38 @@ cc.Class({
         this.spanNewStar();
     },
 
-    //update (dt) {},
+    createNpc: function () {
+        this.INITY = -25;
+        this.player1 = cc.instantiate(this.playerPrefab);
+        this.node.parent.addChild(this.player1);
+        this.player1.setPosition(cc.v2(-337, this.INITY));
+        this.INITY -= INTERVAL;
+        for (let i = 0; i < 3; i++) {
+            switch (i) {
+                case 0:
+                    NPC[0] = cc.instantiate(this.npcPrefab1);
+                    break;
+                case 1:
+                    NPC[1] = cc.instantiate(this.npcPrefab2);
+                    break;
+                case 2:
+                    NPC[2] = cc.instantiate(this.npcPrefab3);
+                    break;
+            }
+            this.node.parent.addChild(NPC[i]);
+            NPC[i].setPosition(cc.v2(-337, this.INITY));
+            this.INITY -= INTERVAL;
+        }
+    },
+
+    update: function (dt) {
+        if (this.player1.x < ENDLINE) {
+
+        } else {
+            this.xSpeed = 0;
+        }
+        this.player1.x += this.xSpeed * dt;
+        this.mainCamera.x = this.player1.x;
+    }
+
 });

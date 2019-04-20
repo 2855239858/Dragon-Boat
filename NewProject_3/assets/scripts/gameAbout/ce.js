@@ -1,13 +1,3 @@
-// Learn cc.Class:
-//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/class.html
-//  - [English] http://docs.cocos2d-x.org/creator/manual/en/scripting/class.html
-// Learn Attribute:
-//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
-//  - [English] http://docs.cocos2d-x.org/creator/manual/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
-//  - [English] https://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
-
 cc.Class({
     extends: cc.Component,
 
@@ -52,8 +42,7 @@ cc.Class({
 
     },
 
-    start() {
-    },
+    start() {},
 
     // update (dt) {},
     update: function (dt) {
@@ -68,7 +57,18 @@ cc.Class({
         if (this.game2.accRight == true && this.node.x > 0) {
             this.game2.accRight = false;
             this.deadANDlife();
-            this.game2.dis_g_or_b((this.node.x) / 100);
+            var a = this.game2.dis_g_or_b((this.node.x) / 100);
+            switch (a) {
+                case 1:
+                    this.game2.xSpeed = 0;
+                    break;
+                case 2:
+                    this.game2.xSpeed = 100;
+                    break;
+                case 3:
+                    this.game2.xSpeed = 200;
+                    break;
+            }
             this.game2.gainScore();
             this.game2.gainCombo(1);
         } else if (this.game2.accLeft == true && this.node.x > 0) {

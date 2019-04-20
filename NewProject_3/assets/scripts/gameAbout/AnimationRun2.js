@@ -1,4 +1,4 @@
-const ENDLINE = 500;
+const ENDLINE = 4200;
 
 cc.Class({
     extends: cc.Component,
