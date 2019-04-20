@@ -1,6 +1,8 @@
 const ENDLINE = 4200;
+var game = require("game2");
 
-cc.Class({
+var AnimationRun = cc.Class({
+    extends: game,
     extends: cc.Component,
 
     properties: {
@@ -8,13 +10,14 @@ cc.Class({
     },
 
     start() {
-
     },
 
     onLoad: function () {
         this.animationComponent = this.getComponent(cc.Animation);
-        this.animationComponent.play('Animation_1_nomalSpeed');
-        //animationComponent.play('Animation_6_lefthandHIThead');
+        if (game.xSpeed > 70)
+            this.animationComponent.play('Animation_4_comboSpeed');
+        else
+            this.animationComponent.play('Animation_1_nomalSpeed');
     },
 
     aniStop: function () {
@@ -22,10 +25,7 @@ cc.Class({
     },
 
     update(dt) {
-        if (this.node.parent.x > ENDLINE-50) {
-            //this.aniStop();
-            this.animationComponent.playAdditive('c_win');
-        }
+
     }
 
 });

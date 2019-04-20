@@ -2,7 +2,6 @@ const ENDLINE = 4200;
 const SPEEDTEMP = 100;
 const NPC = new Array();
 const INTERVAL = 80;
-
 cc.Class({
     extends: cc.Component,
 
@@ -58,7 +57,10 @@ cc.Class({
             type: cc.Node
         },
         player1: null,
-        xSpeed: 0,
+        xSpeed: 60,
+        goodSpeed: 70,
+        perfectSpeed: 80,
+        badSpeed: 50,
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -102,7 +104,7 @@ cc.Class({
     },
     gainScore: function () {
         this.score += 1;
-        this.scoreDisplay.string = 'Score: ' + this.score.toString();
+        this.scoreDisplay.string = 'score: ' + this.score.toString();
     },
     gainCombo: function (i) {
         this.combo += 1;
@@ -144,6 +146,7 @@ cc.Class({
     start() {
         var self = this;
         this.spanNewStar();
+        this.xSpeed = 60;
     },
 
     createNpc: function () {
@@ -171,13 +174,16 @@ cc.Class({
     },
 
     update: function (dt) {
-        if (this.player1.x < ENDLINE) {
-
-        } else {
+        if (this.player1.x >= ENDLINE) {
             this.xSpeed = 0;
         }
-        this.player1.x += this.xSpeed * dt;
+
+        if (this.xSpeed > 60)
+            this.xSpeed -= 0.5;
+        if (this.xSpeed < 60)
+            this.xSpeed += 0.5;
+        this.player1.x += this.xSpeed*dt;
         this.mainCamera.x = this.player1.x;
-    }
+    },
 
 });

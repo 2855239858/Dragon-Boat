@@ -296,19 +296,13 @@
           ]
         }
       },
-      "?": {
+      "head/?": {
         "props": {
           "opacity": [
             {
               "frame": 0,
               "value": 255
-            }
-          ]
-        }
-      },
-      "head/?": {
-        "props": {
-          "opacity": [
+            },
             {
               "frame": 1.2666666666666666,
               "value": 255

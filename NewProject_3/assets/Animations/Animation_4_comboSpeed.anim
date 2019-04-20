@@ -1,12 +1,12 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "Animation_4",
+  "_name": "Animation_4_comboSpeed",
   "_objFlags": 0,
   "_native": "",
   "_duration": 0.7333333333333333,
   "sample": 60,
   "speed": 1,
-  "wrapMode": 1,
+  "wrapMode": "2",
   "curveData": {
     "paths": {
       "body/left hand2": {
