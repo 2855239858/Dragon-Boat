@@ -4050,6 +4050,21 @@
     },
     "_enabled": true,
     "animationComponent": null,
+    "frame1": {
+      "__id__": 102
+    },
+    "frame2": {
+      "__id__": 99
+    },
+    "frame3": {
+      "__id__": 96
+    },
+    "frame4": {
+      "__id__": 58
+    },
+    "frame5": {
+      "__id__": 93
+    },
     "_id": ""
   },
   {
@@ -6128,6 +6143,11 @@
     },
     "_enabled": true,
     "animationComponent": null,
+    "frame1": null,
+    "frame2": null,
+    "frame3": null,
+    "frame4": null,
+    "frame5": null,
     "_id": ""
   },
   {
@@ -8206,6 +8226,11 @@
     },
     "_enabled": true,
     "animationComponent": null,
+    "frame1": null,
+    "frame2": null,
+    "frame3": null,
+    "frame4": null,
+    "frame5": null,
     "_id": ""
   },
   {

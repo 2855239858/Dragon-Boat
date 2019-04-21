@@ -2,6 +2,7 @@ const ENDLINE = 4200;
 const SPEEDTEMP = 100;
 const NPC = new Array();
 const INTERVAL = 80;
+var speed = 60;
 cc.Class({
     extends: cc.Component,
 
@@ -147,6 +148,7 @@ cc.Class({
         var self = this;
         this.spanNewStar();
         this.xSpeed = 60;
+        speed = this.xSpeed;
     },
 
     createNpc: function () {
@@ -179,11 +181,17 @@ cc.Class({
         }
 
         if (this.xSpeed > 60)
-            this.xSpeed -= 0.5;
+            this.xSpeed -= 0.2;
         if (this.xSpeed < 60)
-            this.xSpeed += 0.5;
+            this.xSpeed += 0.2;
+        if (this.xSpeed < 62 && this.xSpeed > 58)
+            this.xSpeed = 60;
+        speed = this.xSpeed;
         this.player1.x += this.xSpeed*dt;
         this.mainCamera.x = this.player1.x;
     },
 
 });
+module.exports.bar = function () {
+    return speed;
+};
