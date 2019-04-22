@@ -62,15 +62,15 @@ cc.Class({
             switch (a) {
                 case 1:
                     if (this.game2.xSpeed > 0)
-                    this.game2.xSpeed = 0;
+                        this.game2.xSpeed = 0;
                     break;
                 case 2:
                     if (this.game2.xSpeed < 100)
-                    this.game2.xSpeed = 100;
+                        this.game2.xSpeed = 100;
                     break;
                 case 3:
                     if (this.game2.xSpeed < 200)
-                    this.game2.xSpeed = 200;
+                        this.game2.xSpeed = 200;
                     break;
             }
             this.game2.gainScore();

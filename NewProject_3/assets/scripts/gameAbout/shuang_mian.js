@@ -43,6 +43,7 @@ cc.Class({
     },
 
     start() {
+
     },
 
     // update (dt) {},
@@ -55,27 +56,27 @@ cc.Class({
         }
         //this.setInputControl();
         this.game2.Button_onClick();
-        if ((this.game2.accRight1 == true && this.node.x > 0) || (this.game2.accRight2 == true && this.node.x > 0)) {
-            this.game2.accRight1 = false; this.game2.accRight2 = false;
+        if ((this.game2.accLeft1 == true && this.node.x > 0) && (this.game2.accLeft2 == true && this.node.x > 0)) {
+            this.game2.accLeft1 = false; this.game2.accLeft2 = false;
             this.deadANDlife();
             var a = this.game2.dis_g_or_b((this.node.x) / 100);
             switch (a) {
                 case 1:
                     if (this.game2.xSpeed > 0)
-                    this.game2.xSpeed = 0;
+                        this.game2.xSpeed = 0;
                     break;
                 case 2:
                     if (this.game2.xSpeed < 100)
-                    this.game2.xSpeed = 100;
+                        this.game2.xSpeed = 100;
                     break;
                 case 3:
                     if (this.game2.xSpeed < 200)
-                    this.game2.xSpeed = 200;
+                        this.game2.xSpeed = 200;
                     break;
             }
             this.game2.gainScore();
             this.game2.gainCombo(1);
-        } else if ((this.game2.accLeft1 == true && this.node.x > 0) || (this.game2.accLeft2 == true && this.node.x > 0)) {
+        } else if ((this.game2.accRight1 == true && this.node.x > 0) || (this.game2.accRight2 == true && this.node.x > 0)) {
             this.game2.gainCombo(0);
         }
     },

@@ -15,6 +15,14 @@ cc.Class({
             default: null,
             type: cc.Prefab
         },
+        shuang_mianPrefab: {
+            default: null,
+            type: cc.Prefab,
+        },
+        shuang_cePrefab: {
+            default: null,
+            type: cc.Prefab,
+        },
         scoreDisplay: {
             default: null,
             type: cc.Label
@@ -27,15 +35,22 @@ cc.Class({
             default: null,
             type: cc.Label
         },
-        mianButton: {
+        mianButton1: {
             default: null,
             type: cc.Button,
         },
-        ceButton: {
+        ceButton1: {
             default: null,
             type: cc.Button,
         },
-
+        mianButton2: {
+            default: null,
+            type: cc.Button,
+        },
+        ceButton2: {
+            default: null,
+            type: cc.Button,
+        },
         playerPrefab: {
             default: null,
             type: cc.Prefab
@@ -72,8 +87,10 @@ cc.Class({
         this.score = 0;
         this.combo = 0;
         this.spanNewStar();
-        this.accLeft == false;
-        this.accRight == false;
+        this.accLeft1 = false;
+        this.accRight1 = false;
+        this.accLeft2 = false;
+        this.accRight2 = false;
     },
     spanNewStar: function () {
         //
@@ -82,13 +99,19 @@ cc.Class({
         var arr = {};
         //生成新节点  左或者右
         var newStar;
-        var randNum = (Math.random() * 100) % 6;
-        if (randNum < 3) {
+        var randNum = (Math.random() * 100) % 4;
+        if (randNum >= 0 && randNum < 1) {
             newStar = cc.instantiate(this.mianPrefab);
             newStar.getComponent('mian').game2 = this;
-        } else {
+        } else if(randNum >= 1 && randNum < 2) {
             newStar = cc.instantiate(this.cePrefab);
             newStar.getComponent('ce').game2 = this;
+        } else if (randNum >= 2 && randNum < 3) {
+            newStar = cc.instantiate(this.shuang_mianPrefab);
+            newStar.getComponent('shuang_mian').game2 = this;
+        } else if (randNum >= 3 && randNum < 4) {
+            newStar = cc.instantiate(this.shuang_cePrefab);
+            newStar.getComponent('shuang_ce').game2 = this;
         }
         //像场景中添加新节点
         this.node.addChild(newStar);
@@ -130,17 +153,29 @@ cc.Class({
     },
     Button_onClick: function () {
         var self = this;
-        self.mianButton.node.on(cc.Node.EventType.TOUCH_START, function (event) {
-            self.accLeft = true;
+        self.mianButton1.node.on(cc.Node.EventType.TOUCH_START, function (event) {
+            self.accLeft1 = true;
         });
-        self.mianButton.node.on(cc.Node.EventType.TOUCH_END, function (event) {
-            self.accLeft = false;
+        self.mianButton1.node.on(cc.Node.EventType.TOUCH_END, function (event) {
+            self.accLeft1 = false;
         });
-        self.ceButton.node.on(cc.Node.EventType.TOUCH_START, function (event) {
-            self.accRight = true;
+        self.ceButton1.node.on(cc.Node.EventType.TOUCH_START, function (event) {
+            self.accRight1 = true;
         });
-        self.ceButton.node.on(cc.Node.EventType.TOUCH_END, function (event) {
-            self.accRight = false;
+        self.ceButton1.node.on(cc.Node.EventType.TOUCH_END, function (event) {
+            self.accRight1 = false;
+        });
+        self.mianButton2.node.on(cc.Node.EventType.TOUCH_START, function (event) {
+            self.accLeft2 = true;
+        });
+        self.mianButton2.node.on(cc.Node.EventType.TOUCH_END, function (event) {
+            self.accLeft2 = false;
+        });
+        self.ceButton2.node.on(cc.Node.EventType.TOUCH_START, function (event) {
+            self.accRight2 = true;
+        });
+        self.ceButton2.node.on(cc.Node.EventType.TOUCH_END, function (event) {
+            self.accRight2 = false;
         });
     },
 
