@@ -41,8 +41,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.3359179735183716,
-      "y": 0.3359179735183716,
+      "x": 0.322892869848029,
+      "y": 0.322892869848029,
       "z": 1
     },
     "_quat": {
@@ -4517,7 +4517,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "5fc78b0f-54fc-4861-8537-846a479d39ef"
+      "__uuid__": "31fe5a05-a259-4bcb-a12f-974e8782908a"
     },
     "_type": 1,
     "_sizeMode": 0,
@@ -4621,19 +4621,19 @@
       "a": 200
     },
     "_N$normalSprite": {
-      "__uuid__": "5fc78b0f-54fc-4861-8537-846a479d39ef"
+      "__uuid__": "31fe5a05-a259-4bcb-a12f-974e8782908a"
     },
     "_N$pressedSprite": {
-      "__uuid__": "2ae25c9c-a9e8-4b18-8d97-1fd996b8b8c4"
+      "__uuid__": "6a380465-2834-4a2b-9611-742a58637706"
     },
     "pressedSprite": {
-      "__uuid__": "2ae25c9c-a9e8-4b18-8d97-1fd996b8b8c4"
+      "__uuid__": "6a380465-2834-4a2b-9611-742a58637706"
     },
     "_N$hoverSprite": {
-      "__uuid__": "5fc78b0f-54fc-4861-8537-846a479d39ef"
+      "__uuid__": "31fe5a05-a259-4bcb-a12f-974e8782908a"
     },
     "hoverSprite": {
-      "__uuid__": "5fc78b0f-54fc-4861-8537-846a479d39ef"
+      "__uuid__": "31fe5a05-a259-4bcb-a12f-974e8782908a"
     },
     "_N$disabledSprite": {
       "__uuid__": "29158224-f8dd-4661-a796-1ffab537140e"
@@ -5291,16 +5291,16 @@
       "__uuid__": "7bb87c77-8497-4b09-b6b2-ea537777b371"
     },
     "_N$pressedSprite": {
-      "__uuid__": "4af404f4-339b-4afa-b32a-63ccbfc7b10f"
+      "__uuid__": "f44e6718-d7e3-4459-832b-101d0b1a3bfc"
     },
     "pressedSprite": {
-      "__uuid__": "4af404f4-339b-4afa-b32a-63ccbfc7b10f"
+      "__uuid__": "f44e6718-d7e3-4459-832b-101d0b1a3bfc"
     },
     "_N$hoverSprite": {
-      "__uuid__": "887e5164-884c-4b8d-9770-dbe9173c037c"
+      "__uuid__": "7bb87c77-8497-4b09-b6b2-ea537777b371"
     },
     "hoverSprite": {
-      "__uuid__": "887e5164-884c-4b8d-9770-dbe9173c037c"
+      "__uuid__": "7bb87c77-8497-4b09-b6b2-ea537777b371"
     },
     "_N$disabledSprite": {
       "__uuid__": "29158224-f8dd-4661-a796-1ffab537140e"
@@ -5371,7 +5371,7 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 2.5,
+      "x": -2.5,
       "y": 2.5,
       "z": 1
     },
@@ -5461,7 +5461,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "5fc78b0f-54fc-4861-8537-846a479d39ef"
+      "__uuid__": "31fe5a05-a259-4bcb-a12f-974e8782908a"
     },
     "_type": 1,
     "_sizeMode": 0,
@@ -5955,19 +5955,19 @@
       "a": 200
     },
     "_N$normalSprite": {
-      "__uuid__": "5fc78b0f-54fc-4861-8537-846a479d39ef"
+      "__uuid__": "31fe5a05-a259-4bcb-a12f-974e8782908a"
     },
     "_N$pressedSprite": {
-      "__uuid__": "2ae25c9c-a9e8-4b18-8d97-1fd996b8b8c4"
+      "__uuid__": "6a380465-2834-4a2b-9611-742a58637706"
     },
     "pressedSprite": {
-      "__uuid__": "2ae25c9c-a9e8-4b18-8d97-1fd996b8b8c4"
+      "__uuid__": "6a380465-2834-4a2b-9611-742a58637706"
     },
     "_N$hoverSprite": {
-      "__uuid__": "5fc78b0f-54fc-4861-8537-846a479d39ef"
+      "__uuid__": "31fe5a05-a259-4bcb-a12f-974e8782908a"
     },
     "hoverSprite": {
-      "__uuid__": "5fc78b0f-54fc-4861-8537-846a479d39ef"
+      "__uuid__": "31fe5a05-a259-4bcb-a12f-974e8782908a"
     },
     "_N$disabledSprite": {
       "__uuid__": "29158224-f8dd-4661-a796-1ffab537140e"
@@ -6220,16 +6220,16 @@
       "__uuid__": "7bb87c77-8497-4b09-b6b2-ea537777b371"
     },
     "_N$pressedSprite": {
-      "__uuid__": "4af404f4-339b-4afa-b32a-63ccbfc7b10f"
+      "__uuid__": "f44e6718-d7e3-4459-832b-101d0b1a3bfc"
     },
     "pressedSprite": {
-      "__uuid__": "4af404f4-339b-4afa-b32a-63ccbfc7b10f"
+      "__uuid__": "f44e6718-d7e3-4459-832b-101d0b1a3bfc"
     },
     "_N$hoverSprite": {
-      "__uuid__": "887e5164-884c-4b8d-9770-dbe9173c037c"
+      "__uuid__": "7bb87c77-8497-4b09-b6b2-ea537777b371"
     },
     "hoverSprite": {
-      "__uuid__": "887e5164-884c-4b8d-9770-dbe9173c037c"
+      "__uuid__": "7bb87c77-8497-4b09-b6b2-ea537777b371"
     },
     "_N$disabledSprite": {
       "__uuid__": "29158224-f8dd-4661-a796-1ffab537140e"

@@ -1,8 +1,8 @@
-const ENDLINE = 500;
+const ENDLINE = 4200;
 const SPEEDTEMP = 100;
 const NPC = new Array();
 const INTERVAL = 80;
-var speed = 60;
+var speed = 160;
 var arr = new Array(10);
 var time, timer;
 cc.Class({
@@ -75,10 +75,10 @@ cc.Class({
             type: cc.Node
         },
         player1: null,
-        xSpeed: 60,
-        goodSpeed: 70,
-        perfectSpeed: 80,
-        badSpeed: 50,
+        xSpeed: 160,
+        goodSpeed: 180,
+        perfectSpeed: 200,
+        badSpeed: 140,
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -101,7 +101,7 @@ cc.Class({
         this.accRight2 = false;
 
         var self = this;
-        this.xSpeed = 60;
+        this.xSpeed = 160;
         speed = this.xSpeed;
     },
     spanNewStar: function (randNum) {
@@ -229,12 +229,12 @@ cc.Class({
             cc.director.loadScene('countScore');
         }
 
-        if (this.xSpeed > 60)
+        if (this.xSpeed > 160)
             this.xSpeed -= 0.2;
-        if (this.xSpeed < 60)
+        if (this.xSpeed < 160)
             this.xSpeed += 0.2;
-        if (this.xSpeed < 62 && this.xSpeed > 58)
-            this.xSpeed = 60;
+        if (this.xSpeed < 162 && this.xSpeed > 158)
+            this.xSpeed = 160;
         speed = this.xSpeed;
         this.player1.x += this.xSpeed*dt;
         this.mainCamera.x = this.player1.x;
