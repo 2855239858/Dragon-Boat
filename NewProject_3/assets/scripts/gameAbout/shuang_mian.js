@@ -32,7 +32,7 @@ cc.Class({
 
     //销毁和重生
     deadANDlife: function () {
-        this.game2.spanNewStar();
+        //this.game2.spanNewStar();
         this.node.destroy();
     },
 

@@ -3,6 +3,8 @@ const SPEEDTEMP = 100;
 const NPC = new Array();
 const INTERVAL = 80;
 var speed = 60;
+var arr = new Array(10);
+var time, timer;
 cc.Class({
     extends: cc.Component,
 
@@ -86,25 +88,26 @@ cc.Class({
         var self = this;
         this.score = 0;
         this.combo = 0;
-        this.spanNewStar();
+
+        this.time = 0;
+        this.timer = 59;
+        this.arr = [0.1, 1.1, 2.1, 3.1, 0.1, 1.1, 2.1, 3.1, 0.1, 1.1];
+        this.spanNewStar(this.arr[9]);
+        this.putarr();
+
         this.accLeft1 = false;
         this.accRight1 = false;
         this.accLeft2 = false;
         this.accRight2 = false;
 
         var self = this;
-        this.spanNewStar();
         this.xSpeed = 60;
         speed = this.xSpeed;
     },
-    spanNewStar: function () {
-        //
-        var head = 0,
-            rail = 0;
-        var arr = {};
+    spanNewStar: function (randNum) {
         //生成新节点  左或者右
         var newStar;
-        var randNum = (Math.random() * 100) % 4;
+        //var randNum = (Math.random() * 100) % 4;
         if (randNum >= 0 && randNum < 1) {
             newStar = cc.instantiate(this.mianPrefab);
             newStar.getComponent('mian').game2 = this;
@@ -123,6 +126,9 @@ cc.Class({
         //赋予新节点位置
         newStar.setPosition(cc.v2(-450, 250));
     },
+    putarr: function () {
+        for (var j = 9; j >= 1; j--) { this.arr[j] = this.arr[j - 1]; }
+    },
     //随机位置函数
     getNewStarPosition: function () {
         var randX = 0;
@@ -140,8 +146,10 @@ cc.Class({
         if (i == 0) {
             this.combo = 0;
             this.comboDisplay.string = 'combo:' + this.combo.toString();
+            this.timer += 1;
         } else {
             this.comboDisplay.string = 'combo:' + this.combo.toString();
+            this.timer -= 1;
         }
     },
     dis_g_or_b: function (i) {
@@ -230,6 +238,15 @@ cc.Class({
         speed = this.xSpeed;
         this.player1.x += this.xSpeed*dt;
         this.mainCamera.x = this.player1.x;
+
+        //按时间生成prefab
+        if (this.time == this.timer) {
+            this.spanNewStar(this.arr[9]);
+            this.putarr();
+        }
+        this.time += 1;
+        this.time = this.time % 70;
+        this.timer = this.timer % 70;
     },
 
 });
