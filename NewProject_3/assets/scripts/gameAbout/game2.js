@@ -1,4 +1,4 @@
-const ENDLINE = 4200;
+const ENDLINE = 500;
 const SPEEDTEMP = 100;
 const NPC = new Array();
 const INTERVAL = 80;
@@ -91,6 +91,11 @@ cc.Class({
         this.accRight1 = false;
         this.accLeft2 = false;
         this.accRight2 = false;
+
+        var self = this;
+        this.spanNewStar();
+        this.xSpeed = 60;
+        speed = this.xSpeed;
     },
     spanNewStar: function () {
         //
@@ -180,10 +185,10 @@ cc.Class({
     },
 
     start() {
-        var self = this;
-        this.spanNewStar();
-        this.xSpeed = 60;
-        speed = this.xSpeed;
+        // var self = this;
+        // this.spanNewStar();
+        // this.xSpeed = 60;
+        // speed = this.xSpeed;
     },
 
     createNpc: function () {
@@ -213,6 +218,7 @@ cc.Class({
     update: function (dt) {
         if (this.player1.x >= ENDLINE) {
             this.xSpeed = 0;
+            cc.director.loadScene('countScore');
         }
 
         if (this.xSpeed > 60)

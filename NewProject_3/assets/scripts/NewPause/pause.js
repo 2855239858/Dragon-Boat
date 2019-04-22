@@ -9,6 +9,10 @@ cc.Class({
 
     },
 
+    gameStart(){
+        cc.director.loadScene('game');
+    },
+
     gamePause(){
         cc.director.pause();
         this.pauseButton.active = true;
@@ -17,6 +21,17 @@ cc.Class({
     gameResume(){
         cc.director.resume();
         this.pauseButton.active = false;
+    },
+
+    gameRestart(){
+        cc.director.pause();
+        cc.director.loadScene('game');
+        cc.director.resume();
+    },
+
+    gameBack(){
+        cc.director.loadScene('menu');
+        cc.director.resume();
     }
 
     // update (dt) {},
