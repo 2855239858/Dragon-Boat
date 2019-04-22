@@ -55,7 +55,7 @@ cc.Class({
         }
         //this.setInputControl();
         this.game2.Button_onClick();
-        if ((this.game2.accRight1 == true && this.node.x > 0) || (this.game2.accRight2 == true && this.node.x > 0)) {
+        if ((this.game2.accRight1 == true && this.node.x > 0) && (this.game2.accRight2 == true && this.node.x > 0)) {
             this.game2.accRight1 = false; this.game2.accRight2 = false;
             this.deadANDlife();
             var a = this.game2.dis_g_or_b((this.node.x) / 100);

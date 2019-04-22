@@ -1,7 +1,6 @@
 const ENDLINE = 4200;
-var game = require("game2");
 var animState,name;
-
+var game = require("game2");
 
 var AnimationRun = cc.Class({
     extends: game,
@@ -14,11 +13,12 @@ var AnimationRun = cc.Class({
         frame3: cc.Node,
         frame4: cc.Node,
         frame5: cc.Node,
+        js: cc.Node,
     },
 
     start() {
         this.animationComponent = this.getComponent(cc.Animation);
-        animState = this.animationComponent.play('Animation_1_nomalSpeed');
+        animState = this.animationComponent.play('Animation_2_goodSpeed');
     },
 
     onLoad: function () {

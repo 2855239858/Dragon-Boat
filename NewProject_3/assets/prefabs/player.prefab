@@ -4048,7 +4048,7 @@
     "node": {
       "__id__": 57
     },
-    "_enabled": true,
+    "_enabled": false,
     "animationComponent": null,
     "frame1": {
       "__id__": 102
@@ -6143,11 +6143,21 @@
     },
     "_enabled": true,
     "animationComponent": null,
-    "frame1": null,
-    "frame2": null,
-    "frame3": null,
-    "frame4": null,
-    "frame5": null,
+    "frame1": {
+      "__id__": 162
+    },
+    "frame2": {
+      "__id__": 159
+    },
+    "frame3": {
+      "__id__": 156
+    },
+    "frame4": {
+      "__id__": 118
+    },
+    "frame5": {
+      "__id__": 153
+    },
     "_id": ""
   },
   {
@@ -8226,11 +8236,21 @@
     },
     "_enabled": true,
     "animationComponent": null,
-    "frame1": null,
-    "frame2": null,
-    "frame3": null,
-    "frame4": null,
-    "frame5": null,
+    "frame1": {
+      "__id__": 222
+    },
+    "frame2": {
+      "__id__": 219
+    },
+    "frame3": {
+      "__id__": 216
+    },
+    "frame4": {
+      "__id__": 178
+    },
+    "frame5": {
+      "__id__": 213
+    },
     "_id": ""
   },
   {
