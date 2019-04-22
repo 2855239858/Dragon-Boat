@@ -41,8 +41,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.7718587239583333,
-      "y": 0.7718587239583333,
+      "x": 0.4265625,
+      "y": 0.4265625,
       "z": 1
     },
     "_quat": {
@@ -6801,8 +6801,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 264,
-      "height": 47
+      "width": 236,
+      "height": 80
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -6812,13 +6812,13 @@
     "_position": {
       "__type__": "cc.Vec3",
       "x": 4,
-      "y": 4,
+      "y": -1.2000000000000028,
       "z": 0
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.81,
-      "y": 1,
+      "x": 0.9,
+      "y": 0.87,
       "z": 1
     },
     "_rotationX": 0,
@@ -6844,7 +6844,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "d38fdd8a-9462-42c3-9b3c-c2a819e994b6"
+      "__uuid__": "e256305f-cd96-4107-b002-da5495d0024f"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -6972,7 +6972,7 @@
     "_left": 0,
     "_right": 464,
     "_top": 0,
-    "_bottom": 139,
+    "_bottom": 122.5,
     "_verticalCenter": 0,
     "_horizontalCenter": 120,
     "_isAbsLeft": true,
@@ -7043,13 +7043,13 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -4,
-      "y": 80,
+      "x": 3,
+      "y": 78,
       "z": 0
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 1,
+      "x": 1.04,
       "y": 1,
       "z": 1
     },
@@ -7204,7 +7204,7 @@
     "_left": 464,
     "_right": 0,
     "_top": 0,
-    "_bottom": 199,
+    "_bottom": 197,
     "_verticalCenter": 0,
     "_horizontalCenter": -120,
     "_isAbsLeft": true,
@@ -7279,7 +7279,7 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 1.5,
+      "x": 0.9,
       "y": 1.5,
       "z": 1
     },
@@ -7332,8 +7332,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 100,
-      "height": 40
+      "width": 3333.3333333333335,
+      "height": 53.333333333333336
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -7348,8 +7348,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
+      "x": 0.03,
+      "y": 0.75,
       "z": 1
     },
     "_rotationX": 0,
@@ -7473,7 +7473,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "f226510d-f7be-44b7-b506-46f7302f67bd"
+      "__uuid__": "3363e896-2fa6-4096-8b58-d9b5167ee15b"
     },
     "_type": 1,
     "_sizeMode": 0,
@@ -7558,8 +7558,8 @@
     ],
     "_N$interactable": true,
     "_N$enableAutoGrayEffect": false,
-    "_N$transition": 2,
-    "transition": 2,
+    "_N$transition": 3,
+    "transition": 3,
     "_N$normalColor": {
       "__type__": "cc.Color",
       "r": 230,
@@ -7603,7 +7603,7 @@
       "a": 200
     },
     "_N$normalSprite": {
-      "__uuid__": "f226510d-f7be-44b7-b506-46f7302f67bd"
+      "__uuid__": "3363e896-2fa6-4096-8b58-d9b5167ee15b"
     },
     "_N$pressedSprite": {
       "__uuid__": "e9ec654c-97a2-4787-9325-e6a10375219a"

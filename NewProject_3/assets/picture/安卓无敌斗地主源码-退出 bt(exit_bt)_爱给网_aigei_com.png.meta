@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "849c9987-e929-4814-8503-69f2119d8288",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "安卓无敌斗地主源码-退出 bt(exit_bt)_爱给网_aigei_com": {
+      "ver": "1.0.3",
+      "uuid": "be2ee80f-e425-4f41-b75c-cc873df9b25e",
+      "rawTextureUuid": "849c9987-e929-4814-8503-69f2119d8288",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 0,
+      "width": 185,
+      "height": 83,
+      "rawWidth": 187,
+      "rawHeight": 83,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "eb44b53d-97b9-4911-b642-94e97fa6280c",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "消除游戏《进击的小怪物》素材 音效-anniu-chongw_爱给网_aigei_com": {
+      "ver": "1.0.3",
+      "uuid": "e256305f-cd96-4107-b002-da5495d0024f",
+      "rawTextureUuid": "eb44b53d-97b9-4911-b642-94e97fa6280c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": -1,
+      "trimX": 0,
+      "trimY": 3,
+      "width": 236,
+      "height": 80,
+      "rawWidth": 238,
+      "rawHeight": 84,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
