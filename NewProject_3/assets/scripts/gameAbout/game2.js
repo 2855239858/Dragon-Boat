@@ -53,6 +53,10 @@ cc.Class({
             default: null,
             type: cc.Button,
         },
+        game_BGM: {
+            default:null,
+            url:cc.AudioClip,
+        },
         playerPrefab: {
             default: null,
             type: cc.Prefab
@@ -89,6 +93,8 @@ cc.Class({
         var self = this;
         this.score = 0;
         this.combo = 0;
+
+        cc.audioEngine.playEffect(this.game_BGM, false);
 
         this.time = 0;
         this.timer = 59;
@@ -239,6 +245,7 @@ cc.Class({
     },
 
     update: function (dt) {
+        
         if (this.player1.x >= ENDLINE) {
             this.xSpeed = 0;
             cc.director.loadScene('countScore');
