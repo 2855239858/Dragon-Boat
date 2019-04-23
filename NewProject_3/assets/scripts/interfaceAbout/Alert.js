@@ -13,7 +13,7 @@ var Alert = {
  * neeCancel:       是否展示取消按钮 bool 类型 default YES.
  * duration:        动画速度 default = 0.3.
 */
-Alert.show = function (detailString, enterCallBack, needCancel, animSpeed) {
+Alert.show = function (enterCallBack, needCancel, animSpeed) {
 
     // 引用
     var self = this;
@@ -60,18 +60,18 @@ Alert.show = function (detailString, enterCallBack, needCancel, animSpeed) {
         self.startFadeIn();
 
         // 参数
-        self.configAlert(detailString, enterCallBack, needCancel, animSpeed);
+        self.configAlert(enterCallBack, needCancel, animSpeed);
         
     });
 
     // 参数
-    self.configAlert = function (detailString, enterCallBack, needCancel, animSpeed) {
+    self.configAlert = function (enterCallBack, needCancel, animSpeed) {
 
         // 回调
         Alert._enterCallBack = enterCallBack;
 
         // 内容
-        Alert._detailLabel.string = detailString;
+        
         // 是否需要取消按钮
         if (needCancel || needCancel == undefined) { // 显示
             Alert._cancelButton.active = true;

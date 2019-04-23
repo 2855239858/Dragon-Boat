@@ -20,7 +20,7 @@ cc.Class({
     },
 
     showAlertText: function () {
-        Alert.show("这里是游戏玩法");
+        Alert.show();
     },
 
     showAlertCallBack: function () {
