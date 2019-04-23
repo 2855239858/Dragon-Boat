@@ -242,6 +242,7 @@ cc.Class({
         if (this.player1.x >= ENDLINE) {
             this.xSpeed = 0;
             cc.director.loadScene('countScore');
+            cc.sys.localStorage.setItem("sco", this.score);
         }
 
         if (this.xSpeed > 160)
