@@ -84,6 +84,7 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad: function () {
+        this.gameControlReplace();
         this.createNpc();
         var self = this;
         this.score = 0;
@@ -104,6 +105,21 @@ cc.Class({
         this.xSpeed = 160;
         speed = this.xSpeed;
     },
+
+
+    gameControlReplace() {
+        var windowSize = cc.winSize;
+        console.log("width="+windowSize.width+",height="+windowSize.height);
+        var cz = this.node.getChildByName('ceButton2');
+        var cy = this.node.getChildByName('ceButton1');
+        var my = this.node.getChildByName('mianButton2');
+        var mz = this.node.getChildByName('mianButton1');
+        cz.setPosition(cc.v2(-windowSize.width/2,-windowSize.height/2));
+        cy.setPosition(cc.v2(windowSize.width/2,-windowSize.height/2));
+        mz.setPosition(cc.v2(-windowSize.width/2,-windowSize.height/2));
+        my.setPosition(cc.v2(windowSize.width/2,-windowSize.height/2));
+    },
+
     spanNewStar: function (randNum) {
         //生成新节点  左或者右
         var newStar;
@@ -111,7 +127,7 @@ cc.Class({
         if (randNum >= 0 && randNum < 1) {
             newStar = cc.instantiate(this.mianPrefab);
             newStar.getComponent('mian').game2 = this;
-        } else if(randNum >= 1 && randNum < 2) {
+        } else if (randNum >= 1 && randNum < 2) {
             newStar = cc.instantiate(this.cePrefab);
             newStar.getComponent('ce').game2 = this;
         } else if (randNum >= 2 && randNum < 3) {
@@ -127,7 +143,9 @@ cc.Class({
         newStar.setPosition(cc.v2(-450, 250));
     },
     putarr: function () {
-        for (var j = 9; j >= 1; j--) { this.arr[j] = this.arr[j - 1]; }
+        for (var j = 9; j >= 1; j--) {
+            this.arr[j] = this.arr[j - 1];
+        }
     },
     //随机位置函数
     getNewStarPosition: function () {
@@ -193,10 +211,7 @@ cc.Class({
     },
 
     start() {
-        // var self = this;
-        // this.spanNewStar();
-        // this.xSpeed = 60;
-        // speed = this.xSpeed;
+
     },
 
     createNpc: function () {
@@ -236,7 +251,7 @@ cc.Class({
         if (this.xSpeed < 162 && this.xSpeed > 158)
             this.xSpeed = 160;
         speed = this.xSpeed;
-        this.player1.x += this.xSpeed*dt;
+        this.player1.x += this.xSpeed * dt;
         this.mainCamera.x = this.player1.x;
 
         //按时间生成prefab
