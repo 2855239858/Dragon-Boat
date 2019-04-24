@@ -41,8 +41,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.4532552083333339,
-      "y": 0.4532552083333339,
+      "x": 0.4296875,
+      "y": 0.4296875,
       "z": 1
     },
     "_quat": {
@@ -522,7 +522,7 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 1,
+      "x": 1.2,
       "y": 1,
       "z": 1
     },
@@ -610,7 +610,7 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 1,
+      "x": 1.2,
       "y": 0.75,
       "z": 1
     },
@@ -682,7 +682,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 55000,
+      "width": 60000,
       "height": 250
     },
     "_anchorPoint": {
@@ -4227,7 +4227,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 142.36,
+      "width": 162.44,
       "height": 40
     },
     "_anchorPoint": {
@@ -4270,8 +4270,8 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
-    "_string": "score:0",
-    "_N$string": "score:0",
+    "_string": "score  0",
+    "_N$string": "score  0",
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
@@ -4314,7 +4314,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 129.9,
+      "width": 191.11,
       "height": 40
     },
     "_anchorPoint": {
@@ -4357,8 +4357,8 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
-    "_string": "combo",
-    "_N$string": "combo",
+    "_string": "combo  0",
+    "_N$string": "combo  0",
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
@@ -6252,6 +6252,9 @@
     },
     "shuang_cePrefab": {
       "__uuid__": "35ca35c4-cb84-458a-b6ba-2504ef2cc19d"
+    },
+    "game_BGM": {
+      "__uuid__": "1e0b625b-a068-4c29-95c0-86c96b2fd884"
     },
     "scoreDisplay": {
       "__id__": 93

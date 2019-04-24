@@ -25,6 +25,10 @@ cc.Class({
             default: null,
             type: cc.Prefab,
         },
+        game_BGM: {
+            default: null,
+            type: cc.AudioClip,
+        },
         scoreDisplay: {
             default: null,
             type: cc.Label
@@ -89,6 +93,8 @@ cc.Class({
         var self = this;
         this.score = 0;
         this.combo = 0;
+
+        cc.audioEngine.playEffect(this.game_BGM, false);
 
         this.time = 0;
         this.timer = 59;
@@ -157,17 +163,17 @@ cc.Class({
     },
     gainScore: function (i) {
         this.score += i;
-        this.scoreDisplay.string = 'score: ' + this.score.toString();
+        this.scoreDisplay.string = 'score  ' + this.score.toString();
         cc.sys.localStorage.setItem("sco", this.score)
     },
     gainCombo: function (i) {
         this.combo += 1;
-        if (i == 0) {
+        if (i <= 0) {
             this.combo = 0;
-            this.comboDisplay.string = 'combo:' + this.combo.toString();
+            this.comboDisplay.string = 'combo  ' + this.combo.toString();
             this.timer += 1;
         } else {
-            this.comboDisplay.string = 'combo:' + this.combo.toString();
+            this.comboDisplay.string = 'combo  ' + this.combo.toString();
             this.timer -= 1;
         }
         if (this.combo > 6)
@@ -183,6 +189,8 @@ cc.Class({
         } else if (i >= 2 && i < 3) {
             this.good_or_badDisplay.string = 'PREFECT';
             return 3;
+        } else {
+            this.good_or_badDisplay.string = 'MISS';
         }
     },
     Button_onClick: function () {

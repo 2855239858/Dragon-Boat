@@ -52,6 +52,7 @@ cc.Class({
         if (this.node.x >= this.moveDuration) {
             this.game2.gainCombo(0);
             this.deadANDlife();
+            this.game2.dis_g_or_b((this.node.x) / 100);
         }
         //this.setInputControl();
         this.game2.Button_onClick();
@@ -61,14 +62,17 @@ cc.Class({
             var a = this.game2.dis_g_or_b((this.node.x) / 100);
             switch (a) {
                 case 1:
+                    this.game2.gainCombo(0);
                     if (this.game2.xSpeed > 0)
                         this.game2.xSpeed = 120;
                     break;
                 case 2:
+                    this.game2.gainCombo(1);
                     if (this.game2.xSpeed < 160)
                         this.game2.xSpeed = 160;
                     break;
                 case 3:
+                    this.game2.gainCombo(1);
                     if (this.game2.xSpeed < 180)
                         this.game2.xSpeed = 180;
                     break;
@@ -79,7 +83,6 @@ cc.Class({
                 case 2: this.game2.gainScore(100); break;
                 case 3: this.game2.gainScore(120); break;
             }
-            this.game2.gainCombo(1);
         } else if ((this.game2.accLeft1 == true && this.node.x > 0) || (this.game2.accLeft2 == true && this.node.x > 0)) {
             this.game2.gainCombo(0);
         }
