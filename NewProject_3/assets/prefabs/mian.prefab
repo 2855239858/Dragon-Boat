@@ -55,8 +55,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
+      "x": 0.7,
+      "y": 0.7,
       "z": 1
     },
     "_rotationX": 0,
@@ -82,7 +82,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "887e5164-884c-4b8d-9770-dbe9173c037c"
+      "__uuid__": "4af404f4-339b-4afa-b32a-63ccbfc7b10f"
     },
     "_type": 0,
     "_sizeMode": 0,

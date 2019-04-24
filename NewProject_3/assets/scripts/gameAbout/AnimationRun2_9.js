@@ -33,22 +33,22 @@ var AnimationRun2_9 = cc.Class({
 
     },
     update(dt) {
-        if ((game.bar() < 140) && animState.name != "c_win") {
+if ((game.bar() < 120) && animState.name != "c_win") {
             this.animationComponent.stop();
             this.changeOpcity();
             animState = this.animationComponent.play('c_win');
         }
-        if (game.bar() < 150 && game.bar() > 140 && animState.name != "Animation_5_badSpeed") {
+        if (game.bar() < 135 && game.bar() > 120 && animState.name != "Animation_5_badSpeed") {
             this.animationComponent.stop();
             this.changeOpcity();
             animState = this.animationComponent.play('Animation_5_badSpeed');
         }
-        if (game.bar() == 140 && animState.name != "Animation_1_nomalSpeed") {
+        if (game.bar() > 135 && game.bar() < 145 && animState.name != "Animation_1_nomalSpeed") {
             this.animationComponent.stop();
             this.changeOpcity();
             animState = this.animationComponent.play('Animation_1_nomalSpeed');
         }
-        if (game.bar() > 140 && game.bar() < 150 && animState.name != "Animation_2_goodSpeed") {
+        if (game.bar() > 145 && game.bar() < 160 && animState.name != "Animation_2_goodSpeed") {
             this.animationComponent.stop();
             this.changeOpcity();
             animState = this.animationComponent.play('Animation_2_goodSpeed');

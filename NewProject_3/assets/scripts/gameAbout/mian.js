@@ -63,18 +63,23 @@ cc.Class({
             switch (a) {
                 case 1:
                     if (this.game2.xSpeed > 0)
-                    this.game2.xSpeed = 140;
+                    this.game2.xSpeed = 120;
                     break;
                 case 2:
+                    if (this.game2.xSpeed < 160)
+                    this.game2.xSpeed = 160;
+                    break;
+                case 3:
                     if (this.game2.xSpeed < 180)
                     this.game2.xSpeed = 180;
                     break;
-                case 3:
-                    if (this.game2.xSpeed < 200)
-                    this.game2.xSpeed = 200;
-                    break;
             }
-            this.game2.gainScore();
+            if (this.game2.combo > 6)
+                this.game2.gainScore(150);
+            else switch (a) {
+                case 2: this.game2.gainScore(100); break;
+                case 3: this.game2.gainScore(120); break;
+            }
             this.game2.gainCombo(1);
         } else if ((this.game2.accRight1 == true && this.node.x > 0) || (this.game2.accRight2 == true && this.node.x > 0)) {
             this.game2.gainCombo(0);

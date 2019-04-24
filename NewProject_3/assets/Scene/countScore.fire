@@ -17,7 +17,7 @@
         "__id__": 2
       }
     ],
-    "_active": true,
+    "_active": false,
     "_level": 0,
     "_components": [],
     "_prefab": null,
@@ -41,8 +41,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.5907958984375,
-      "y": 0.5907958984375,
+      "x": 0.32472264991676697,
+      "y": 0.32472264991676697,
       "z": 1
     },
     "_quat": {
@@ -81,7 +81,7 @@
       }
     ],
     "_active": true,
-    "_level": 0,
+    "_level": 1,
     "_components": [
       {
         "__id__": 23

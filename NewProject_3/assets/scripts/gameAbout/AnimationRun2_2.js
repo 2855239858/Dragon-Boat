@@ -33,32 +33,32 @@ var AnimationRun2_2 = cc.Class({
 
     },
     update(dt) {
-        if ((game.bar() < 100) && animState.name != "c_win") {
+ if (game.bar() < 100 && animState.name != "c_win") {
             this.animationComponent.stop();
             this.changeOpcity();
             animState = this.animationComponent.play('c_win');
         }
-        if (game.bar() < 110 && game.bar() > 100 && animState.name != "Animation_5_badSpeed") {
+        if (game.bar() < 120 && game.bar() > 100 && animState.name != "Animation_5_badSpeed") {
             this.animationComponent.stop();
             this.changeOpcity();
             animState = this.animationComponent.play('Animation_5_badSpeed');
         }
-        if (game.bar() == 110 && animState.name != "Animation_1_nomalSpeed") {
+        if (game.bar() > 120 && game.bar() < 140  && animState.name != "Animation_1_nomalSpeed") {
             this.animationComponent.stop();
             this.changeOpcity();
             animState = this.animationComponent.play('Animation_1_nomalSpeed');
         }
-        if (game.bar() > 110 && game.bar() < 120 && animState.name != "Animation_2_goodSpeed") {
+        if (game.bar() > 140 && game.bar() < 160 && animState.name != "Animation_2_goodSpeed") {
             this.animationComponent.stop();
             this.changeOpcity();
             animState = this.animationComponent.play('Animation_2_goodSpeed');
         }
-        if (game.bar() > 120 && game.bar() < 130 && animState.name != "Animation_3_perfectSpeed") {
+        if (game.bar() > 160 && game.bar() < 190 && animState.name != "Animation_3_perfectSpeed") {
             this.animationComponent.stop();
             this.changeOpcity();
             animState = this.animationComponent.play('Animation_3_perfectSpeed');
         }
-        if (game.bar() > 130 && animState.name != "Animation_4_comboSpeed") {
+        if (game.bar() > 190 && animState.name != "Animation_4_comboSpeed") {
             this.animationComponent.stop();
             this.changeOpcity();
             animState = this.animationComponent.play('Animation_4_comboSpeed');

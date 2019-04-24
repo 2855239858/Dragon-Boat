@@ -2,7 +2,7 @@ const ENDLINE = 4200;
 const SPEEDTEMP = 100;
 const NPC = new Array();
 const INTERVAL = 80;
-var speed = 160;
+var speed = 140;
 var arr = new Array(10);
 var time, timer;
 cc.Class({
@@ -53,10 +53,6 @@ cc.Class({
             default: null,
             type: cc.Button,
         },
-        game_BGM: {
-            default:null,
-            url:cc.AudioClip,
-        },
         playerPrefab: {
             default: null,
             type: cc.Prefab
@@ -79,10 +75,10 @@ cc.Class({
             type: cc.Node
         },
         player1: null,
-        xSpeed: 160,
-        goodSpeed: 180,
-        perfectSpeed: 200,
-        badSpeed: 140,
+        xSpeed: 140,
+        goodSpeed: 1860,
+        perfectSpeed: 180,
+        badSpeed: 120,
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -93,8 +89,6 @@ cc.Class({
         var self = this;
         this.score = 0;
         this.combo = 0;
-
-        cc.audioEngine.playEffect(this.game_BGM, false);
 
         this.time = 0;
         this.timer = 59;
@@ -108,7 +102,7 @@ cc.Class({
         this.accRight2 = false;
 
         var self = this;
-        this.xSpeed = 160;
+        this.xSpeed = 140;
         speed = this.xSpeed;
     },
 
@@ -161,9 +155,10 @@ cc.Class({
         randY = this.node.height / 5;
         return cc.v2(randX, randY);
     },
-    gainScore: function () {
-        this.score += 1;
+    gainScore: function (i) {
+        this.score += i;
         this.scoreDisplay.string = 'score: ' + this.score.toString();
+        cc.sys.localStorage.setItem("sco", this.score)
     },
     gainCombo: function (i) {
         this.combo += 1;
@@ -175,6 +170,8 @@ cc.Class({
             this.comboDisplay.string = 'combo:' + this.combo.toString();
             this.timer -= 1;
         }
+        if (this.combo > 6)
+            this.xSpeed = 190;
     },
     dis_g_or_b: function (i) {
         if (i >= 0 && i < 1) {
@@ -245,19 +242,17 @@ cc.Class({
     },
 
     update: function (dt) {
-        
         if (this.player1.x >= ENDLINE) {
             this.xSpeed = 0;
             cc.director.loadScene('countScore');
-            cc.sys.localStorage.setItem("sco", this.score);
         }
 
-        if (this.xSpeed > 160)
+        if (this.xSpeed > 140)
             this.xSpeed -= 0.2;
-        if (this.xSpeed < 160)
+        if (this.xSpeed < 140)
             this.xSpeed += 0.2;
-        if (this.xSpeed < 162 && this.xSpeed > 158)
-            this.xSpeed = 160;
+        if (this.xSpeed < 142 && this.xSpeed > 138)
+            this.xSpeed = 140;
         speed = this.xSpeed;
         this.player1.x += this.xSpeed * dt;
         this.mainCamera.x = this.player1.x;

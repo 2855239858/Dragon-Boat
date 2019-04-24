@@ -15,13 +15,13 @@ cc.Class({
         var a = this.npcJudge();
         switch(a){
             case 1:
-                this.randomSpeed = this.randomFrom(100, 140);
+                this.randomSpeed = this.randomFrom(100, 220);
             break;
             case 2:
-                this.randomSpeed = this.randomFrom(120, 160);
+                this.randomSpeed = this.randomFrom(110, 210);
             break;
             case 3:
-                this.randomSpeed = this.randomFrom(140, 180);
+                this.randomSpeed = this.randomFrom(120, 200);
             break;
         }
         this.xSpeed = this.randomSpeed;
@@ -64,17 +64,17 @@ cc.Class({
         this.node.x += this.xSpeed * dt;
         distance += this.xSpeed * dt;
         speed = this.xSpeed;
-        if (distance % 700 > 680) {
+        if (distance % 400 > 390) {
             var a = this.npcJudge();
             switch (a) {
                 case 1:
-                    this.randomSpeed = this.randomFrom(100, 140);
+                    this.randomSpeed = this.randomFrom(100, 220);
                     break;
                 case 2:
-                    this.randomSpeed = this.randomFrom(120, 160);
+                    this.randomSpeed = this.randomFrom(110, 210);
                     break;
                 case 3:
-                    this.randomSpeed = this.randomFrom(140, 180);
+                    this.randomSpeed = this.randomFrom(120, 200);
                     break;
             }
             this.xSpeed = this.randomSpeed;
