@@ -2,7 +2,7 @@
 
 #### Introduction:
 
-"Dragon Boat Hegemony" is a mini game based on WeChat mini-game platform, combining music and racing gameplay, developed by Cocos Creator to deeply integrate with Chinese traditional culture.
+"Dragon Boat" is a mini game based on WeChat mini-game platform, combining music and racing gameplay, developed by Cocos Creator to deeply integrate with Chinese traditional culture.
 
 #### Demonstration:
 
