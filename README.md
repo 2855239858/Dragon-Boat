@@ -12,29 +12,27 @@
 
 ###### (2) Gameplay description
 
-![image-20211024211218174](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20211024211218174.png)
+![image-20211024211218174](https://github.com/2855239858/Dragon-Boat/blob/master/imgs/2.jpg)
 
 ###### (3) Animation:
 
-![image-20211024211240190](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20211024211240190.png)
+![image-20211024211240190](https://github.com/2855239858/Dragon-Boat/blob/master/imgs/3.jpg)
 
 ###### (4) Choose level:
 
-![image-20211024211502036](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20211024211502036.png)
+![image-20211024211502036](https://github.com/2855239858/Dragon-Boat/blob/master/imgs/4.jpg)
 
 ###### (5) Choose music:
 
-![image-20211024211522902](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20211024211522902.png)
+![image-20211024211522902](https://github.com/2855239858/Dragon-Boat/blob/master/imgs/5.jpg)
 
 ###### (6) Playing:
 
-![image-20211024211558893](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20211024211558893.png)
+![image-20211024211558893](https://github.com/2855239858/Dragon-Boat/blob/master/imgs/6.jpg)
 
-![image-20211024211604381](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20211024211604381.png)
-
-![image-20211024211608138](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20211024211608138.png)
+![image-20211024211604381](https://github.com/2855239858/Dragon-Boat/blob/master/imgs/7.jpg)
 
 ###### (7) End interface:
 
-![image-20211024211634722](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20211024211634722.png)
+![image-20211024211634722](https://github.com/2855239858/Dragon-Boat/blob/master/imgs/8.jpg)
 
