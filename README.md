@@ -8,31 +8,31 @@
 
 ###### (1) Start game interface
 
-![image-20211024211141693](https://github.com/2855239858/Dragon-Boat/blob/master/imgs/1.jpg){:height="300px" width="500px"}
+<img src="https://github.com/2855239858/Dragon-Boat/blob/master/imgs/1.jpg" width = "200" height = "300" alt="" align=center />
 
 ###### (2) Gameplay description
 
-![image-20211024211218174](https://github.com/2855239858/Dragon-Boat/blob/master/imgs/2.jpg)
+<img src="https://github.com/2855239858/Dragon-Boat/blob/master/imgs/2.jpg" width = "200" height = "300" alt="" align=center />
 
 ###### (3) Animation:
 
-![image-20211024211240190](https://github.com/2855239858/Dragon-Boat/blob/master/imgs/3.jpg)
+<img src="https://github.com/2855239858/Dragon-Boat/blob/master/imgs/3.jpg" width = "200" height = "300" alt="" align=center />
 
 ###### (4) Choose level:
 
-![image-20211024211502036](https://github.com/2855239858/Dragon-Boat/blob/master/imgs/4.jpg)
+<img src="https://github.com/2855239858/Dragon-Boat/blob/master/imgs/4.jpg" width = "200" height = "300" alt="" align=center />
 
 ###### (5) Choose music:
 
-![image-20211024211522902](https://github.com/2855239858/Dragon-Boat/blob/master/imgs/5.jpg)
+<img src="https://github.com/2855239858/Dragon-Boat/blob/master/imgs/5.jpg" width = "200" height = "300" alt="" align=center />
 
 ###### (6) Playing:
 
-![image-20211024211558893](https://github.com/2855239858/Dragon-Boat/blob/master/imgs/6.jpg)
+<img src="https://github.com/2855239858/Dragon-Boat/blob/master/imgs/6.jpg" width = "200" height = "300" alt="" align=center />
 
-![image-20211024211604381](https://github.com/2855239858/Dragon-Boat/blob/master/imgs/7.jpg)
+<img src="https://github.com/2855239858/Dragon-Boat/blob/master/imgs/7.jpg" width = "200" height = "300" alt="" align=center />
 
 ###### (7) End interface:
 
-![image-20211024211634722](https://github.com/2855239858/Dragon-Boat/blob/master/imgs/8.jpg)
+<img src="https://github.com/2855239858/Dragon-Boat/blob/master/imgs/8.jpg" width = "200" height = "300" alt="" align=center />
 
