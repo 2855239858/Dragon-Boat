@@ -8,7 +8,7 @@
 
 ###### (1) Start game interface
 
-![image-20211024211141693](https://github.com/2855239858/Dragon-Boat/blob/master/imgs/1.jpg)
+![image-20211024211141693](https://github.com/2855239858/Dragon-Boat/blob/master/imgs/1.jpg){height="300px" width="500px"}
 
 ###### (2) Gameplay description
 
