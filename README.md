@@ -8,7 +8,7 @@
 
 ###### (1) Start game interface
 
-![image-20211024211141693](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20211024211141693.png)
+![image-20211024211141693](https://github.com/2855239858/Dragon-Boat/blob/master/imgs/1.jpg)
 
 ###### (2) Gameplay description
 
